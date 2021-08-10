@@ -181,7 +181,7 @@ Footer part
          padding:0px;
         grid-template-columns:1fr 1fr;
     }
-    footer{
+    footer>.last{
         padding-left:0px;
     }
     
@@ -193,8 +193,8 @@ Footer part
 
 @media only screen and (min-width:688px) and (max-width:992px){
     .first-part{
-        justify-content: space-around;
-        width:100%;
+        white-space:wrap;
+        width:40%;
     }
     
      main>.players{
@@ -202,5 +202,20 @@ Footer part
          padding:0px;
         grid-template-columns:1fr;
     }
-
+    .Extra{
+        flex-direction: column;
+        width:40%;
+       
+    }
+    .other{
+        margin:0px;
+        padding-left: 0px;
+        flex-direction: column;
+        width:100%;
+    }
+     .footer-part>.last{
+        padding-left:0px;
+        width:40%;
+        
+     }
 }
