@@ -178,16 +178,12 @@ Footer part
         
     }
     
-     main>.players{
-    
-        grid-template-columns:1fr 1fr;
+    main>.players{
+        margin:0px;
+        padding:0px;
+       grid-template-columns:1fr;
     }
-    main>.players>.player{
-        margin-left: 0px;
-        margin-right:0px;
-        padding-right: 0px;
-        padding-left: 0px;
-    }
+
     .other{
         box-shadow: none;
         margin:20px;
@@ -232,10 +228,19 @@ Footer part
        
     }
     
-     main>.players{
-         margin:0px;
-         padding:0px;
-        grid-template-columns:1fr;
+     /* 
+    } */
+    main>.players{
+        margin-left: 0px;
+        margin-right: 0px;
+        grid-template-columns:300px 300px;
+        grid-column-gap: 0px;
+    }
+    main>.players>.player{
+        width:50% ;
+        margin: 30px 0px;
+       padding-right: 50px;
+        padding-left: 0px;
     }
     
     .other{
