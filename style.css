@@ -1,3 +1,6 @@
+
+
+
 /* ------------
    header part
    ---------------- */
@@ -42,8 +45,8 @@
     Main Part
 ------------- */
 main .players{
-    
-    padding-left: 300px;
+    margin-left: 300px;
+    /* padding-left: 300px; */
     padding-right: 200px;
     display: grid;
     grid-template-columns: 210px 210px 210px;
@@ -164,4 +167,40 @@ Footer part
 }
 .last p{
     padding-left:120px;
+}
+
+/* For mobile device */
+@media only screen and (max-width:600px)  {
+    .first-part{
+     
+        width:100%;
+    }
+    
+     main>.players{
+         margin:0px;
+         padding:0px;
+        grid-template-columns:1fr 1fr;
+    }
+    footer{
+        padding-left:0px;
+    }
+    
+    
+}
+
+/* for ipad */
+
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .first-part{
+        justify-content: space-around;
+        width:100%;
+    }
+    
+     main>.players{
+         margin:0px;
+         padding:0px;
+        grid-template-columns:1fr;
+    }
+
 }
