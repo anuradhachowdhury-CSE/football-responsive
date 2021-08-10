@@ -174,16 +174,49 @@ Footer part
     .first-part{
      
         width:100%;
+        padding-left: 5px;
+        
     }
     
      main>.players{
-         margin:0px;
-         padding:0px;
+    
         grid-template-columns:1fr 1fr;
     }
-    footer>.last{
-        padding-left:0px;
+    main>.players>.player{
+        margin-left: 0px;
+        margin-right:0px;
+        padding-right: 0px;
+        padding-left: 0px;
     }
+    .other{
+        box-shadow: none;
+        margin:20px;
+        padding-left: 20px;
+        flex-direction: column;
+        
+    }
+    .Extra{
+        
+        flex-direction: column;
+        width:40%;
+       
+    }
+    .Extra>.written{
+        padding-left: 50px;
+        
+    }
+    
+     .footer-part>.last{
+        padding-left:50px;
+        width:60%;
+        
+     }
+     .footer-part>.last>.font-awesome{
+         padding-left: 80px;
+     }
+     .footer-part>.last>p{
+         padding-left: 50px;
+     }
     
     
 }
@@ -194,7 +227,9 @@ Footer part
 @media only screen and (min-width:688px) and (max-width:992px){
     .first-part{
         white-space:wrap;
-        width:40%;
+        width:56%;
+        margin:2px;
+       
     }
     
      main>.players{
@@ -202,17 +237,21 @@ Footer part
          padding:0px;
         grid-template-columns:1fr;
     }
+    
+    .other{
+        box-shadow: none;
+        margin:0px;
+        padding-left: 0px;
+        flex-direction: column;
+        
+    }
+    
     .Extra{
         flex-direction: column;
         width:40%;
        
     }
-    .other{
-        margin:0px;
-        padding-left: 0px;
-        flex-direction: column;
-        width:100%;
-    }
+    
      .footer-part>.last{
         padding-left:0px;
         width:40%;
